@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './components/Button';
+import { Contanier } from './components/Container';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
@@ -43,6 +44,8 @@ function App() {
 
       <Button handleClick={(event,otherData)=>console.log("Button Clicked",otherData)}/>
       <Input handleChange={(event)=>console.log(event)} value={"someValue"}/>
+
+      <Contanier styles={{border:"1px solid blue",marginTop:"20px"}}/>
     </div>
   );
 }
