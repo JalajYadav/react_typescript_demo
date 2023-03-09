@@ -9,6 +9,8 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { UserTypeAssertion } from './components/state/UserTypeAssertion'
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import { Box } from './components/context/Box';
 
 function App() {
   const personName = {
@@ -47,7 +49,12 @@ function App() {
       <Input handleChange={(event) => console.log(event)} value={"someValue"} />
 
       <Contanier styles={{ border: "1px solid blue", marginTop: "20px" }} />
-      <UserTypeAssertion />
+
+      <UserTypeAssertion /> {/* This component has an example of how you can fool typescript using "as" keyword*/}
+
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
