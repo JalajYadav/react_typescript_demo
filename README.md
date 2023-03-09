@@ -49,6 +49,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 This is a project that i built initailly to learn typescript from the codeEvolution youtube playlist. https://youtu.be/TiSGujM22OI
 
-### I followed uptil Lesson 10
-
 The original repo of the tutorial can be found on the tutors Github Link: https://github.com/gopinav/React-TypeScript-Tutorials
