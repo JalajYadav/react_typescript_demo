@@ -7,12 +7,14 @@ type AuthUser = {
 
 export const User = () => {
     const [user, setUser] = useState<null | AuthUser>(null)
+
     const handleLogin = () => {
         setUser({
             name: 'Vishwas',
             email: 'vishwas@example.com'
         })
     }
+
     const handleLogout = () => {
         setUser(null)
     }
